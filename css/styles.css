@@ -1,0 +1,44 @@
+/*Colors*/
+/* primary button */
+/* secondary button */
+/* fontColor, background */
+/* signup disclaimer font color */
+/* menu background */
+/* singup disclaimer background */
+body {
+  color: #3F3F3F !important; }
+
+md-icon {
+  fill: #0C4B88 !important; }
+
+ng-md-icon {
+  fill: #3F3F3F !important; }
+
+.whiteBack {
+  background: #fff !important; }
+
+.blueBack {
+  background: #0C4B88 !important; }
+
+.redBack {
+  background: #ED1B2E !important; }
+
+.lightGrayBack {
+  background: #DEDEDE !important; }
+
+.lighterGrayBack {
+  background: #F7F7F7 !important;
+  color: #B0B0B0; }
+
+.menuList {
+  padding: 0 !important; }
+  .menuList .md-button:not([disabled]):hover {
+    background: #ED1B2E; }
+    .menuList .md-button:not([disabled]):hover .menuOption {
+      color: #fff; }
+  .menuList .menuOption {
+    z-index: 1;
+    color: #3F3F3F;
+    font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */
