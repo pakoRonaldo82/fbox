@@ -1,5 +1,6 @@
 /*Colors*/
 /* primary button */
+/* Login Home */
 /* secondary button */
 /* fontColor, background */
 /* signup disclaimer font color */
@@ -7,12 +8,6 @@
 /* singup disclaimer background */
 body {
   color: #3F3F3F !important; }
-
-md-icon {
-  fill: #0C4B88 !important; }
-
-ng-md-icon {
-  fill: #3F3F3F !important; }
 
 .whiteBack {
   background: #fff !important; }
@@ -29,6 +24,85 @@ ng-md-icon {
 .lighterGrayBack {
   background: #F7F7F7 !important;
   color: #B0B0B0; }
+
+/* large icons */
+.icon-lg {
+  font-size: 24px;
+  padding: 10px;
+  color: gainsboro;
+  cursor: pointer; }
+  .icon-lg:hover {
+    color: darkblue; }
+
+.icon-md {
+  font-size: large;
+  padding: 10px;
+  color: gainsboro;
+  cursor: pointer; }
+  .icon-md:hover {
+    color: darkblue; }
+
+.panel-lg {
+  padding: 0px !important; }
+
+.btn-danger-lg {
+  width: 100% !important;
+  padding: 20px !important; }
+
+.btn:hover {
+  color: #fff; }
+
+/*.icon-lg {
+  font-size: xx-large;
+}
+
+.icon-lg:hover {
+ color: darkblue;
+}
+
+.icon-md {
+ font-size: large;
+ padding: 10px;
+ color: gainsboro;
+ cursor: pointer;
+}
+
+.icon-md:hover {
+ color: darkblue;
+}*/
+.closeIcon {
+  position: absolute;
+  right: 15px;
+  top: 20px; }
+  .closeIcon i {
+    padding: 0px;
+    color: #B0B0B0; }
+
+label[for="forgot"] {
+  color: #B0B0B0;
+  top: 15px;
+  padding-left: 0px; }
+
+.btn-green {
+  background: #53C253;
+  opacity: 1 !important;
+  color: #fff; }
+
+.btn-create-account {
+  border-color: #0C4B88;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px !important;
+  border: none !important;
+  border-radius: 4px !important; }
+
+.nav-search {
+  float: right;
+  padding: 10px; }
 
 .menuList {
   padding: 0 !important; }

@@ -1,31 +1,7 @@
 @import 'files/variables.scss';
-
-body{
-	color: $font-color !important;
-}
-md-icon{
-	fill: $blueColor !important;
-}
-ng-md-icon{
-	fill: $font-color !important;
-}
-
-.whiteBack{
-	background: $whiteColor !important;
-}
-.blueBack{
-	background: $blueColor !important;
-}
-.redBack{
-	background: $redColor !important;
-}
-.lightGrayBack{
-	background: $lightGray !important;
-}
-.lighterGrayBack{
-	background: $lighterGray !important;
-	color: $grayColor;
-}
+@import 'files/global.scss';
+@import 'files/login.scss';
+@import 'files/navbar.scss';
 
 .menuList{
 	padding: 0 !important;

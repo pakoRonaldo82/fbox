@@ -1,0 +1,25 @@
+.closeIcon{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	i{
+		padding: 0px;
+		color: $grayColor;
+	}
+}
+label[for="forgot"]{
+	color: $grayColor;
+	top: 15px;
+	padding-left: 0px;
+}
+.btn-green{
+	background: $greenColor;
+	opacity: 1 !important;
+	color: $whiteColor;
+}
+.btn-create-account{
+	border-color: $blueColor;
+	color: $whiteColor;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

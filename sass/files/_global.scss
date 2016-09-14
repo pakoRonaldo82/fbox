@@ -1,0 +1,69 @@
+body{
+	color: $font-color !important;
+}
+.whiteBack{
+	background: $whiteColor !important;
+}
+.blueBack{
+	background: $blueColor !important;
+}
+.redBack{
+	background: $redColor !important;
+}
+.lightGrayBack{
+	background: $lightGray !important;
+}
+.lighterGrayBack{
+	background: $lighterGray !important;
+	color: $grayColor;
+}
+/* large icons */
+.icon-lg{
+	font-size: 24px;
+	padding: 10px;
+  	color: gainsboro;
+  	cursor: pointer;
+
+  	&:hover{
+  		color: darkblue;
+  	};
+}
+.icon-md {
+	 font-size: large;
+	 padding: 10px;
+	 color: gainsboro;
+	 cursor: pointer;
+
+	 &:hover{
+		color: darkblue;
+	}
+};
+.panel-lg {
+   padding: 0px !important;
+}
+.btn-danger-lg {
+    width: 100% !important;
+    padding: 20px !important;
+}
+.btn:hover{
+	color: $whiteColor;
+}
+
+/*.icon-lg {
+  font-size: xx-large;
+}
+
+.icon-lg:hover {
+ color: darkblue;
+}
+
+.icon-md {
+ font-size: large;
+ padding: 10px;
+ color: gainsboro;
+ cursor: pointer;
+}
+
+.icon-md:hover {
+ color: darkblue;
+}*/

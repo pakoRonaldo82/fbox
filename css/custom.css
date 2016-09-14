@@ -1,4 +1,4 @@
-.navbar-toggle {
+/*.navbar-toggle {
     float: left !important;
     margin-left: 15px !important;
     border: none !important;
@@ -8,9 +8,9 @@
 .nav-search {
     float: right;
     padding: 10px;
-}
+}*/
 
-.panel-lg {
+/*.panel-lg {
    padding: 0px !important;
 }
 
@@ -39,7 +39,7 @@
 
 .icon-md:hover {
  color: darkblue;
-}
+}*/
 
 .information {
   text-align: center;
