@@ -1,8 +1,12 @@
 {
     "name": "fbox",
+    "version": "1.0.0",
+    "description": "project based on bootstrap and angular",
+    "author": "flybox team",
     "scripts": {
         "start": "node server.js"
     },
+    "bin": {"module-name": "./bin/flybox"},
     "dependencies": {
         "express": "3"
     }
