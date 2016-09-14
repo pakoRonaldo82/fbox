@@ -3,4 +3,5 @@ preview templates
 
 1. run npm install
 2. run npm install -g bower
-3. npm start
+3. run bower install
+4. run npm start
