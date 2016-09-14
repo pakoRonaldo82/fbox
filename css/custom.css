@@ -1,0 +1,101 @@
+.navbar-toggle {
+    float: left !important;
+    margin-left: 15px !important;
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+.nav-search {
+    float: right;
+    padding: 10px;
+}
+
+.panel-lg {
+   padding: 0px !important;
+}
+
+.btn-danger-lg {
+    width: 100% !important;
+    padding: 20px !important;
+}
+
+.icon-lg {
+  font-size: xx-large;
+  padding: 10px;
+  color: gainsboro;
+  cursor: pointer;
+}
+
+.icon-lg:hover {
+ color: darkblue;
+}
+
+.icon-md {
+ font-size: large;
+ padding: 10px;
+ color: gainsboro;
+ cursor: pointer;
+}
+
+.icon-md:hover {
+ color: darkblue;
+}
+
+.information {
+  text-align: center;
+  font-size: small !important;
+}
+
+.mini-submenu{
+  background-color: none;
+  border: none;
+  border-radius: 4px;
+  padding: 9px;
+  /*position: relative;*/
+  width: 42px;
+  margin-top: 15px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+  border: 2px solid;
+  border-color: darkblue;
+}
+
+.mini-submenu .icon-bar {
+  background-color: darkblue;
+}
+
+.lblCompany {
+ color: crimson;
+}
+
+.bg-main {
+  background-color: #eeeeee;
+  padding: 20px;
+  max-height: 200px;
+  height: 100px;
+}
+
+.bg-main-inner {
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+.bg-main-inner-tracking {
+  background-color: darkgray;
+  padding: 20px;
+}
+
+.text-white {
+ color: #fff;
+}
