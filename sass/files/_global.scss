@@ -17,6 +17,9 @@ body{
 	background: $lighterGray !important;
 	color: $grayColor;
 }
+.text-white {
+ color: $whiteColor;
+}
 /* large icons */
 .icon-lg{
 	font-size: 24px;
@@ -47,6 +50,9 @@ body{
 }
 .btn:hover{
 	color: $whiteColor;
+}
+@mixin blackOpacity($opacity){
+	background-color: rgba(0,0,0,$opacity); 
 }
 
 /*.icon-lg {

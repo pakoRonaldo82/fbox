@@ -46,12 +46,12 @@
   font-size: small !important;
 }
 
-.mini-submenu{
+/*.mini-submenu{
   background-color: none;
   border: none;
   border-radius: 4px;
   padding: 9px;
-  /*position: relative;*/
+  //position: relative;
   width: 42px;
   margin-top: 15px;
 
@@ -73,13 +73,13 @@
 
 .mini-submenu .icon-bar {
   background-color: darkblue;
-}
+}*/
 
-.lblCompany {
+/*.lblCompany {
  color: crimson;
-}
+}*/
 
-.bg-main {
+/*.bg-main {
   background-color: #eeeeee;
   padding: 20px;
   max-height: 200px;
@@ -94,8 +94,9 @@
 .bg-main-inner-tracking {
   background-color: darkgray;
   padding: 20px;
-}
+}*/
 
-.text-white {
+/*.text-white {
  color: #fff;
 }
+*/

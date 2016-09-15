@@ -15,44 +15,37 @@
 
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-   <nav class="navbar">
-    <div class="container-fluid">
-       <div class="mini-submenu col-xs-2 col-md-2 col-sm-2">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-       </div>
-       <div class="col-xs-9 col-md-9 col-sm-9">
-         <h3 class="text-center lblCompany">FlyBox</h3>
-       </div>
-       <div class="col-xs-1 col-md-1 col-sm-1">
-        <span class="glyphicon glyphicon-search icon-lg" aria-hidden="true"></span>
-       </div>
-
-    </div>
-      </nav>
-
-  </div><!-- /.container-fluid -->
-
-
-      <div class="container">
-       <div class="row">
-          <div ng-view></div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="col-xs-2 nav-menu">
+          <span class="glyphicon glyphicon-menu-hamburger icon-lg" aria-hidden="true"></span>
+        </div>
+        <div class="col-xs-8">
+          <h3 class="text-center lblCompany">FBox</h3>
+        </div>
+        <div class="col-xs-2 text-right nav-search">
+          <span class="glyphicon glyphicon-search icon-lg" aria-hidden="true"></span>
         </div>
       </div>
+    </nav>
+  </div><!-- /.container-fluid -->
 
+  <div class="container">
+    <div class="row">
+      <div ng-view></div>
+    </div>
+  </div>
 
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
-    <script src="app.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="ui/authentication/services.js"></script>
-    <script src="ui/authentication/controllers.js"></script>
-    <script src="ui/signup/controller.js"></script>
-    <script src="ui/main/controllers.js"></script>
-    <script src="ui/home/controllers.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+  <script src="app.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="ui/authentication/services.js"></script>
+  <script src="ui/authentication/controllers.js"></script>
+  <script src="ui/signup/controller.js"></script>
+  <script src="ui/main/controllers.js"></script>
+  <script src="ui/home/controllers.js"></script>
   </body>
 </html>
