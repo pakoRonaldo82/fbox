@@ -25,6 +25,9 @@ body {
   background: #F7F7F7 !important;
   color: #B0B0B0; }
 
+.greenBack {
+  background: #53C253; }
+
 .text-white {
   color: #fff; }
 
@@ -55,24 +58,6 @@ body {
 .btn:hover {
   color: #fff; }
 
-/*.icon-lg {
-  font-size: xx-large;
-}
-
-.icon-lg:hover {
- color: darkblue;
-}
-
-.icon-md {
- font-size: large;
- padding: 10px;
- color: gainsboro;
- cursor: pointer;
-}
-
-.icon-md:hover {
- color: darkblue;
-}*/
 .closeIcon {
   position: absolute;
   right: 15px;
@@ -123,12 +108,29 @@ label[for="forgot"] {
   height: 100px; }
 
 .bg-main-inner {
-  background-color: #F7F7F7;
-  padding: 20px; }
+  background-color: #F7F7F7; }
 
-.bg-main-inner-tracking {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px; }
+#tracking h3 {
+  margin-top: 0px; }
+
+.carousel {
+  height: 320px; }
+  .carousel .carousel-inner {
+    background: #000 url("/img/main/tracking.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%; }
+    .carousel .carousel-inner div.item {
+      height: 100%;
+      padding-top: 10px;
+      background: rgba(0, 0, 0, 0.5); }
+      .carousel .carousel-inner div.item .bg-main-inner-tracking {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+        padding-top: 15px; }
+        .carousel .carousel-inner div.item .bg-main-inner-tracking .form-group input.col-xs-12 {
+          margin: 0 0 15px 0; }
+        .carousel .carousel-inner div.item .bg-main-inner-tracking .form-group button {
+          margin-bottom: 15px; }
 
 .menuList {
   padding: 0 !important; }

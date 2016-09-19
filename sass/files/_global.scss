@@ -17,6 +17,9 @@ body{
 	background: $lighterGray !important;
 	color: $grayColor;
 }
+.greenBack{
+	background: $greenColor;
+}
 .text-white {
  color: $whiteColor;
 }
@@ -54,22 +57,3 @@ body{
 @mixin blackOpacity($opacity){
 	background-color: rgba(0,0,0,$opacity); 
 }
-
-/*.icon-lg {
-  font-size: xx-large;
-}
-
-.icon-lg:hover {
- color: darkblue;
-}
-
-.icon-md {
- font-size: large;
- padding: 10px;
- color: gainsboro;
- cursor: pointer;
-}
-
-.icon-md:hover {
- color: darkblue;
-}*/

@@ -7,10 +7,40 @@
 
 .bg-main-inner {
 	background-color: $lighterGray;
-	padding: 20px;
 }
 
-.bg-main-inner-tracking {
-	@include blackOpacity(0.8);
-	padding: 20px;
+#tracking{
+	h3{
+		margin-top: 0px;
+	}
+}
+
+.carousel{
+	height: 320px;
+	.carousel-inner{
+		background: #000 url("/img/main/tracking.jpg") no-repeat center center;
+		background-size: cover;
+		height: 100%;
+
+		div.item{
+			height: 100%;
+			padding-top: 10px;
+			background: rgba(0,0,0,0.5);
+
+			.bg-main-inner-tracking {
+				@include blackOpacity(0.4);
+				border-radius: 6px;
+				padding-top: 15px;
+
+				.form-group{
+					input.col-xs-12{
+						margin: 0 0 15px 0;
+					}
+					button{
+						margin-bottom: 15px;
+					}
+				}
+			}	
+		}
+	}
 }
