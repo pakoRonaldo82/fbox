@@ -31,6 +31,12 @@ body {
 .text-white {
   color: #fff; }
 
+.padding-15 {
+  padding: 15px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
 /* large icons */
 .icon-lg {
   font-size: 24px;
@@ -48,6 +54,16 @@ body {
   .icon-md:hover {
     color: darkblue; }
 
+.closeIcon {
+  position: absolute;
+  right: 15px;
+  top: 20px; }
+  .closeIcon i {
+    padding: 0px;
+    color: #B0B0B0; }
+  .closeIcon.inside-border {
+    right: 30px; }
+
 .panel-lg {
   padding: 0px !important; }
 
@@ -58,13 +74,8 @@ body {
 .btn:hover {
   color: #fff; }
 
-.closeIcon {
-  position: absolute;
-  right: 15px;
-  top: 20px; }
-  .closeIcon i {
-    padding: 0px;
-    color: #B0B0B0; }
+.form-group span.help-block {
+  color: #ED1B2E; }
 
 label[for="forgot"] {
   color: #B0B0B0;
@@ -88,18 +99,21 @@ label[for="forgot"] {
   border: none !important;
   border-radius: 4px !important; }
 
-.nav-search {
-  float: right;
-  padding: 10px; }
-
-.nav-menu {
-  padding: 10px;
-  cursor: pointer; }
-  .nav-menu span {
-    color: #0C4B88; }
-
-.lblCompany {
-  color: #ED1B2E; }
+.navbar .container-fluid {
+  padding: 0; }
+  .navbar .container-fluid .nav-menu {
+    padding: 10px 0;
+    cursor: pointer; }
+    .navbar .container-fluid .nav-menu span {
+      color: #0C4B88;
+      padding: 10px 0; }
+  .navbar .container-fluid .nav-search {
+    float: right;
+    padding: 10px 0; }
+    .navbar .container-fluid .nav-search span {
+      padding: 10px 0; }
+  .navbar .container-fluid .lblCompany {
+    color: #ED1B2E; }
 
 .bg-main {
   background-color: #DEDEDE;
@@ -131,6 +145,11 @@ label[for="forgot"] {
           margin: 0 0 15px 0; }
         .carousel .carousel-inner div.item .bg-main-inner-tracking .form-group button {
           margin-bottom: 15px; }
+
+.signup-panel {
+  padding: 0px; }
+  .signup-panel .disclaimer-signup {
+    padding: 15px 10%; }
 
 .menuList {
   padding: 0 !important; }

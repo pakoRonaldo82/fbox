@@ -1,113 +1,118 @@
 <div ng-show="error" class="alert alert-danger">{{error}}</div>
 <div class="col-xs-12 col-md-offset-0 col-md-12 col-sm-12">
-<div class="panel panel-default">
-    <div class="col-xs-10 col-md-10 col-sm-10"><h3 class="text-center">SIGN UP</h3></div>
-    <div class="col-xs-1 col-md-1 col-sm-1">
-        <a href="#/main"><i class="glyphicon glyphicon-remove icon-md" aria-hidden="true"></i></a>
-    </div>
-     <div class="row"></div>
-  <div class="panel-body">
-<form name="form" ng-submit="register()" role="form">
-    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-       <!--<label for="username">Username</label>
-        <i class="fa fa-key"></i>-->
-
-        <input type="text" name="name" id="name" class="form-control input-lg" ng-model="name" required placeholder="Nombres*"/>
-        <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">Username is required</span>
-    </div>
-    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-        <!--<label for="password">Password</label>
-        <i class="fa fa-lock"></i>-->
-        <input type="text" name="lastname" id="lastname" class="form-control input-lg" ng-model="lastname" required placeholder="Apellidos*"/>
-        <span ng-show="form.lastname.$dirty && form.lastname.$error.required" class="help-block">Password is required</span>
-    </div>
-    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-   <select class="form-control input-lg">
-        <option value="" selected disabled>Tipo de identificacion*</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-    </select>
-    </div>
-    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-        <!--<label for="password">Password</label>
-        <i class="fa fa-lock"></i>-->
-        <input type="text" name="identinumber" id="identinumber" class="form-control input-lg" ng-model="identinumber" required placeholder="Identificacion"/>
-        <span ng-show="form.identinumber.$dirty && form.identinumber.$error.required" class="help-block">Password is required</span>
-    </div>
-     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-     <select class="form-control input-lg">
-        <option value="" selected disabled>Alianza</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-    </select>
-    </div>
-    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-     <input type="text" name="codigoverif" id="codigoverif" class="form-control input-lg" ng-model="codigoverif" required placeholder="Codigo de verificacion"/>
-        <span ng-show="form.codigoverif.$dirty && form.codigoverif.$error.required" class="help-block">Password is required</span>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 jumbotron">
-        <p>Todas las actividades que se realizan dentro de un sistema de informacion mediante una cuenta de usuario son responsabilidad unicamente del dueño</p>
-    </div>
-     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-        <input type="text" name="email" id="email" class="form-control input-lg" ng-model="email" required placeholder="Correo electronico"/>
-        <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Username is required</span>
-    </div>
-     <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
-         <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control input-lg" placeholder="Fecha de nacimiento (aaaa-mm-dd)" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-         </div>
-    </div>
-     <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
-        <!--<label for="password">Password</label>
-        <i class="fa fa-lock"></i>-->
-        <input type="password" name="password" id="password" class="form-control input-lg" ng-model="password" required placeholder="Contraseña*"/>
-        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
-    </div>
-     <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
-        <!--<label for="password">Password</label>
-        <i class="fa fa-lock"></i>-->
-        <input type="password" name="confirmpassword" id="confirmpassword" class="form-control input-lg" ng-model="confirmpassword" required placeholder="Confirmacion*"/>
-        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
-    </div>
-    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-       <select class="form-control input-lg">
-            <option value="" selected disabled>Pregunta secreta</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="form-group form-group-lg col-md-12 col-sm-12 col-xs-12">
-        <!--<label for="password">Password</label>
-        <i class="fa fa-lock"></i>-->
-        <input type="password" name="response" id="response" class="form-control input-lg" ng-model="response" required placeholder="Respuesta secreta*"/>
-        <span ng-show="form.response.$dirty && form.response.$error.required" class="help-block">Respuesta is required</span>
-    </div>
-
-    <div class="form-actions col-md-12 col-sm-12 col-xs-12">
-        <div class="checkbox col-md-8 col-sm-8 col-xs-12">
-        <label>
-        <input type="checkbox" value=""/>
-            He leido y acepto los <a href="#">terminos y condiciones*</a>
-        </label>
+    <div class="panel panel-default">
+        <div class="col-xs-12">
+            <h3 class="text-center">SIGN UP</h3>
+            <span class="closeIcon inside-border"><a href="#/main"><i class="glyphicon glyphicon-remove icon-lg" aria-hidden="true"></i></a></span>
         </div>
-        <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-danger btn-lg">REGISTRAR</button>
-        <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+        <div class="row"></div>
+        <div class="panel-body signup-panel">
+            <form name="form" ng-submit="register()" role="form">
+                <div class="padding-15 col-xs-12">
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                       <!--<label for="username">Username</label>
+                        <i class="fa fa-key"></i>-->
+
+                        <input type="text" name="name" id="name" class="form-control input-lg" ng-model="name" required placeholder="Nombres*"/>
+                        <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">Username is required</span>
+                    </div>
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <!--<label for="password">Password</label>
+                        <i class="fa fa-lock"></i>-->
+                        <input type="text" name="lastname" id="lastname" class="form-control input-lg" ng-model="lastname" required placeholder="Apellidos*"/>
+                        <span ng-show="form.lastname.$dirty && form.lastname.$error.required" class="help-block">Password is required</span>
+                    </div>
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                   <select class="form-control input-lg">
+                        <option value="" selected disabled>Tipo de identificacion*</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <!--<label for="password">Password</label>
+                        <i class="fa fa-lock"></i>-->
+                        <input type="text" name="identinumber" id="identinumber" class="form-control input-lg" ng-model="identinumber" required placeholder="Identificacion"/>
+                        <span ng-show="form.identinumber.$dirty && form.identinumber.$error.required" class="help-block">This field is required</span>
+                    </div>
+                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                     <select class="form-control input-lg">
+                        <option value="" selected disabled>Alianza</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                     <input type="text" name="codigoverif" id="codigoverif" class="form-control input-lg" ng-model="codigoverif" required placeholder="Codigo de verificacion"/>
+                        <span ng-show="form.codigoverif.$dirty && form.codigoverif.$error.required" class="help-block">This field is required</span>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 lighterGrayBack disclaimer-signup text-center">
+                    <p>Todas las actividades que se realizan dentro de un sistema de informacion mediante una cuenta de usuario son responsabilidad unicamente del dueño de la misma.</p>
+                </div>
+
+                <div class="padding-15 col-xs-12">
+                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="email" id="email" class="form-control input-lg" ng-model="email" required placeholder="Correo electronico"/>
+                        <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">This field is required</span>
+                    </div>
+                    <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control input-lg" placeholder="Fecha de nacimiento (aaaa-mm-dd)" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
+                        <!--<label for="password">Password</label>
+                        <i class="fa fa-lock"></i>-->
+                        <input type="password" name="password" id="password" class="form-control input-lg" ng-model="password" required placeholder="Contraseña*"/>
+                        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">This field is required</span>
+                    </div>
+                    <div class="form-group form-group-lg col-md-6 col-sm-6 col-xs-12">
+                        <!--<label for="password">Password</label>
+                        <i class="fa fa-lock"></i>-->
+                        <input type="password" name="confirmpassword" id="confirmpassword" class="form-control input-lg" ng-model="confirmpassword" required placeholder="Confirmacion*"/>
+                        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">This field is required</span>
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <select class="form-control input-lg">
+                            <option value="" selected disabled>Pregunta secreta</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-lg col-md-12 col-sm-12 col-xs-12">
+                        <!--<label for="password">Password</label>
+                        <i class="fa fa-lock"></i>-->
+                        <input type="password" name="response" id="response" class="form-control input-lg" ng-model="response" required placeholder="Respuesta secreta*"/>
+                        <span ng-show="form.response.$dirty && form.response.$error.required" class="help-block">Respuesta is required</span>
+                    </div>
+                </div>
+
+                <div class="form-actions col-md-12 col-sm-12 col-xs-12">
+                    <div class="checkbox col-sm-8 col-xs-12">
+                    <label>
+                    <input type="checkbox" value=""/>
+                        He leido y acepto los <a href="#">terminos y condiciones*</a>
+                    </label>
+                    </div>
+                    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn text-white blueBack btn-lg col-xs-12 col-sm-4 margin-bottom-20">REGISTRAR</button>
+                    <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+                </div>
+
+            </form>
+        </div>
     </div>
-
-</form>
-      </div>
-
-</div>
 </div>

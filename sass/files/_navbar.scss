@@ -4,17 +4,25 @@
     border: none !important;
     border-radius: 4px !important;
 }
-.nav-search {
-    float: right;
-    padding: 10px;
-}
-.nav-menu{
-	padding: 10px;
-	cursor: pointer;
-	span{
-		color: $blueColor;
+.navbar .container-fluid{
+	padding: 0;
+
+	.nav-menu{
+		padding: 10px 0;
+		cursor: pointer;
+		span{
+			color: $blueColor;
+			padding: 10px 0;
+		}
 	}
-}
-.lblCompany {
-	color: $redColor;
+	.nav-search {
+	    float: right;
+	    padding: 10px 0;
+	    span{
+	    	padding: 10px 0;
+	    }
+	}
+	.lblCompany {
+		color: $redColor;
+	}
 }

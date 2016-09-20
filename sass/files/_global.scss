@@ -23,6 +23,13 @@ body{
 .text-white {
  color: $whiteColor;
 }
+.padding-15{
+	padding: 15px;
+}
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+
 /* large icons */
 .icon-lg{
 	font-size: 24px;
@@ -43,7 +50,20 @@ body{
 	 &:hover{
 		color: darkblue;
 	}
-};
+}
+.closeIcon{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	i{
+		padding: 0px;
+		color: $grayColor;
+	}
+	&.inside-border{
+		right: 30px;
+	}
+}
+
 .panel-lg {
    padding: 0px !important;
 }
@@ -56,4 +76,10 @@ body{
 }
 @mixin blackOpacity($opacity){
 	background-color: rgba(0,0,0,$opacity); 
+}
+
+.form-group{
+	span.help-block{
+		color: $redColor;
+	}
 }
