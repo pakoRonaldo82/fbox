@@ -26,3 +26,41 @@
 		color: $redColor;
 	}
 }
+
+/* Hover/Focus state */
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $whiteColor;
+    background-color: $redColor;
+  }
+}
+
+// Active state
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    text-decoration: none;
+    outline: 0;
+    background-color: $redColor;
+  }
+}
+
+.dropdown-menu > .disabled > a {
+  &,
+  &:hover,
+  &:focus {
+    color: $dropdown-link-disabled-color;
+  }
+
+  // Nuke hover/focus effects
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none; // Remove CSS gradient
+  }
+}

@@ -5,5 +5,7 @@ angular.module('Calculadora')
 .controller('CalculadoraController',
     ['$scope', '$rootScope', '$location',
     function ($scope, $rootScope, $location) {
-     $scope.priceSlider = 100;
+     $scope.costoLargo = 100;
+     $scope.costoAlto = 100;
+     $scope.costoAncho = 100;
   }]);

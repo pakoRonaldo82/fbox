@@ -14,11 +14,11 @@
 
   <body>
 
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <nav class="navbar">
       <div class="container-fluid">
-        <div class="col-xs-2 nav-menu">
+        <div  class="col-xs-2 nav-menu">
           <span class="glyphicon glyphicon-menu-hamburger icon-lg" aria-hidden="true"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
              <ul class="dropdown-menu">
@@ -26,7 +26,7 @@
                 <li><a href="#">TRACKING</a></li>
                 <li><a href="#">COMO FUNCIONA</a></li>
                 <li><a href="#/calculadora">CALCULADORA DE COSTOS</a></li>
-                <li><a href="#">CONTACTENOS</a></li>
+                <li><a href="#contactuslink">CONTACTENOS</a></li>
                 <li><a href="#">REDES</a></li>
                 <li><a href="#">TERMINOS Y CONDICIONES</a></li>
                 <li><a href="#">FAQ / PREGUNTAS FRECUENTES</a></li>
@@ -44,9 +44,8 @@
     </nav>
   </div><!-- /.container-fluid -->
 
-  <div class="container">
-    <div class="row">
-      <div ng-view></div>
+  <div class="container-fluid">
+    <div class="row" ng-view>
     </div>
   </div>
 
@@ -63,5 +62,6 @@
   <script src="ui/main/controllers.js"></script>
   <script src="ui/home/controllers.js"></script>
   <script src="ui/calculadora/calculadora.controller.js"></script>
+  <script src="ui/contactus/contactus.controller.js"></script>
   </body>
 </html>

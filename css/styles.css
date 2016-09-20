@@ -115,6 +115,25 @@ label[for="forgot"] {
   .navbar .container-fluid .lblCompany {
     color: #ED1B2E; }
 
+/* Hover/Focus state */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ED1B2E; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #ED1B2E; }
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  color: #cccccc; }
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none; }
+
 .bg-main {
   background-color: #DEDEDE;
   padding: 20px;

@@ -6,6 +6,7 @@ angular.module('Main', []);
 angular.module('Home', []);
 angular.module('Signup', []);
 angular.module('Calculadora', []);
+angular.module('Contactus', []);
 
 angular.module('app', [
     'Authentication',
@@ -13,6 +14,7 @@ angular.module('app', [
     'Main',
     'Signup',
     'Calculadora',
+    'Contactus',
     'ngRoute',
     'ngCookies',
     'rzModule'
@@ -37,14 +39,11 @@ angular.module('app', [
             controller: 'CalculadoraController',
             templateUrl: 'ui/calculadora/views/calculadora.html',
             hideMenus: true
-        })
-
-        .when('/', {
-            controller: 'HomeController',
-            templateUrl: 'modules/home/views/home.html'
-        })
-
-        .otherwise({ redirectTo: '/login' });
+        }).when('/contactus', {
+            controller: 'ContactusController',
+            templateUrl: 'ui/contactus/views/contactus.html',
+            hideMenus: true
+        }).otherwise({ redirectTo: '/login' });
 }])
 
 .run(['$rootScope', '$location', '$cookieStore', '$http',
@@ -57,14 +56,10 @@ angular.module('app', [
 
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
             // redirect to login page if not logged in
-            if($location.path() === '/signup') {
+            var restrictedPage = $.inArray($location.path(), ['/signup','/login', '/calculadora', '/contactus','/contactus']) === -1;
 
-            } else if($location.path() === '/login') {
-
-            } else if($location.path() === '/calculadora') {
-
-            } else if ($location.path() !== '/main' && !$rootScope.globals.currentUser) {
-                $location.path('/login');
+            if (restrictedPage && !$rootScope.globals.currentUser) {
+                $location.path('/main');
             }
         });
     }]);
