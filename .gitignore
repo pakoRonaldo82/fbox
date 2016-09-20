@@ -1,0 +1,6 @@
+/bower_components/angular-cookies/LICENSE.md
+/bower_components/angular-cookies/README.md
+/bower_components/angular-cookies/.bower.json
+/node_modules/minimist/test/long.js
+/node_modules/**
+/bower_components/**
