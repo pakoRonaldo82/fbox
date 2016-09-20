@@ -1,16 +1,15 @@
 .bg-main {
 	background-color: $lightGray;
-	padding: 20px;
+	padding-top: 20px;
 	max-height: 200px;
 	height: 100px;
 }
 
 .bg-main-inner {
-	background-color: $lighterGray;
-	padding: 20px;
+	background-color: $grayColor;
 }
 
 .bg-main-inner-tracking {
 	@include blackOpacity(0.8);
-	padding: 20px;
+	padding: 80px;
 }
